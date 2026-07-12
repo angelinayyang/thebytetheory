@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block title %}Welcome · Pixel Pantry{% endblock %}
 {% block content %}
+
+<link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
 <div class="auth welcome">
   <p class="eyebrow">One quick thing</p>
   <h1><i>When do you usually eat? </i></h1>

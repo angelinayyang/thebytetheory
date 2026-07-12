@@ -1,0 +1,21 @@
+{
+  "short_name": "ByteTheory",
+  "name": "The Byte Theory Pantry Planner",
+  "icons": [
+    {
+      "src": "/static/icons/97_sushi.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icons/icon-97_sushi.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50",
+  "display": "standalone",
+  "orientation": "portrait"
+}
