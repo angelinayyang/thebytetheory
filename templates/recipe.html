@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}{{ r.name }} · Pixel Pantry{% endblock %}
+{% block content %}
+
+<a class="back" href="{{ url_for('index') }}">← All recipes</a>
+
+<article class="detail">
+  <header class="detail-head">
+    <div class="detail-thumb" style="--tint: {{ r.tint }}">
+      <img src="{{ url_for('static', filename='icons/' + r.icon) }}" alt="" width="150" height="150">
+    </div>
+    <div class="detail-intro">
+      <p class="eyebrow">{{ r.category }}</p>
+      <h1>{{ r.name }}</h1>
+      <p class="detail-blurb">{{ r.description }}</p>
+      {% if r.diets %}
+      <ul class="diet-tags">{% for d in r.diets %}<li>{{ d|titlecase }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </header>
+
+  <dl class="stat-strip">
+    <div><dt>Prep</dt><dd>{{ r.prep_time }} min</dd></div>
+    <div><dt>Cook</dt><dd>{{ r.cook_time }} min</dd></div>
+    <div><dt>Total</dt><dd>{{ r.time }} min</dd></div>
+    <div><dt>Servings</dt><dd>{{ r.servings }}</dd></div>
+    <div><dt>Calories</dt><dd>≈{{ r.calories }}<small class="est"> /serving</small></dd></div>
+    <div><dt>Needs</dt><dd>{{ (r.appliances | map('titlecase') | join(', ')) or 'No cooking' }}</dd></div>
+  </dl>
+
+  {% if user %}
+  <form class="plan-add plan-add-recipe" method="post" action="{{ url_for('plan_add') }}">
+    <input type="hidden" name="recipe_id" value="{{ r.id }}">
+    <input type="hidden" name="next" value="{{ url_for('recipe', recipe_id=r.id, serves=serves) }}">
+    <span class="pixel-label add-label">Add to plan</span>
+    <label class="field"><span>Day</span>
+      <input type="date" name="day" value="{{ today }}" required></label>
+    <label class="field"><span>Meal</span>
+      <select name="meal">{% for m in meal_slots %}<option value="{{ m }}">{{ m|capitalize }}</option>{% endfor %}</select></label>
+    <button type="submit" class="apply">Add</button>
+  </form>
+  {% else %}
+  <p class="plan-login-hint"><a href="{{ url_for('login') }}">Log in</a> to add this to your meal plan or a cooking group.</p>
+  {% endif %}
+
+  <section class="allergy-panel">
+    <p class="pixel-label">Allergen info</p>
+    {% if r.allergens %}
+      <ul class="allergy-list">{% for a in r.allergens %}<li>{{ a|titlecase }}</li>{% endfor %}</ul>
+    {% else %}
+      <p class="allergy-clear">None of the major allergens.</p>
+    {% endif %}
+  </section>
+
+  <div class="columns">
+    <section class="ingredients">
+      <div class="ing-head">
+        <h3>Ingredients</h3>
+        <div class="stepper" role="group" aria-label="Servings">
+          {% if serves > 1 %}
+            <a class="step" href="{{ url_for('recipe', recipe_id=r.id, serves=serves-1) }}" aria-label="Fewer">−</a>
+          {% else %}<span class="step disabled">−</span>{% endif %}
+          <span class="step-val">Cooking for {{ serves }}</span>
+          <a class="step" href="{{ url_for('recipe', recipe_id=r.id, serves=serves+1) }}" aria-label="More">+</a>
+        </div>
+      </div>
+      <p class="col-note">
+        {% if serves != base_servings %}
+          Scaled for {{ serves }} · base recipe makes {{ r.servings }}.
+          <span class="est">Round odd amounts as you go.</span>
+        {% else %}
+          Makes {{ r.servings }}.
+        {% endif %}
+        {% if group and serves == group.size %} · portioned for your group <strong>{{ group.group['name'] }}</strong>{% endif %}
+      </p>
+      <ul>{% for i in r.ingredients %}<li>{{ i }}</li>{% endfor %}</ul>
+    </section>
+
+    <section class="steps">
+      <h3>Method</h3>
+      <ol>{% for s in r.steps %}<li>{{ s }}</li>{% endfor %}</ol>
+      {% if r.tips %}
+      <div class="tips">
+        <p class="pixel-label">Cook's tips</p>
+        <ul>{% for t in r.tips %}<li>{{ t }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </section>
+  </div>
+</article>
+
+{% endblock %}

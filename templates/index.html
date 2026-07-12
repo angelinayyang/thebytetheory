@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <h1>What are you<br>craving today?</h1>
+  <p class="hero-sub"><i>View and organize the recipes below; log-in to create weekly meal plans; earn points through cooking!</i></p>
+</section>
+
+<!-- Category tabs (inspired by Julienne's cookbook tabs) -->
+<nav class="tabs" aria-label="Categories">
+  <a class="tab {{ 'is-active' if not active.category else '' }}"
+     href="{{ url_for('index', **carry) }}">All</a>
+  {% for c in categories %}
+    <a class="tab {{ 'is-active' if active.category == c else '' }}"
+       href="{{ url_for('index', category=c, **carry) }}">{{ c|capitalize }}</a>
+  {% endfor %}
+</nav>
+
+<!-- Filter panel. A plain GET form: the state lives in the URL, so filters
+     are shareable and bookmarkable. -->
+<form class="filters" method="get" action="{{ url_for('index') }}">
+  {% if active.category %}<input type="hidden" name="category" value="{{ active.category }}">{% endif %}
+
+  <div class="filter-top">
+    <label class="field field-search">
+      <span>Search</span>
+      <input type="search" name="q" value="{{ active.q }}" placeholder="ramen, bagels, steak..">
+    </label>
+
+    <label class="field">
+      <span>Diet</span>
+      <select name="diet">
+        <option value="">Any</option>
+        {% for d in diets %}
+          <option value="{{ d }}" {{ 'selected' if active.diet == d }}>{{ d|titlecase }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Max time</span>
+      <select name="max_time">
+        <option value="">Any</option>
+        {% for t in [10, 20, 30, 45] %}
+          <option value="{{ t }}" {{ 'selected' if active.max_time == t|string }}>≤ {{ t }} min</option>
+        {% endfor %}
+      </select>
+    </label>
+  </div>
+
+  <div class="filter-checks">
+    <fieldset class="check-group">
+      <legend>Appliances you have</legend>
+      <div class="chips">
+        {% for a in appliances %}
+        <label class="chip">
+          <input type="checkbox" name="appliance" value="{{ a }}"
+                 {{ 'checked' if a in active.appliance }}>
+          <span>{{ a|titlecase }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </fieldset>
+
+    <fieldset class="check-group">
+      <legend>Avoid allergens</legend>
+      <div class="chips">
+        {% for a in allergens %}
+        <label class="chip chip-warn">
+          <input type="checkbox" name="avoid" value="{{ a }}"
+                 {{ 'checked' if a in active.avoid }}>
+          <span>{{ a|titlecase }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="filter-actions">
+    <button type="submit" class="apply">Apply filters</button>
+    <a class="reset" href="{{ url_for('index') }}">Reset</a>
+  </div>
+</form>
+
+<p class="result-count">{{ recipes|length }} recipe{{ '' if recipes|length == 1 else 's' }}</p>
+
+{% if recipes %}
+<ul class="recipe-list">
+  {% for r in recipes %}
+  <li class="rrow">
+    <a href="{{ url_for('recipe', recipe_id=r.id) }}">
+      <span class="rrow-thumb" style="--tint: {{ r.tint }}">
+        <img src="{{ url_for('static', filename='icons/' + r.icon) }}" alt="" width="52" height="52">
+      </span>
+      <span class="rrow-body">
+        <span class="rrow-cat pixel-label">{{ r.category }}</span>
+        <span class="rrow-name">{{ r.name }}</span>
+        <span class="rrow-meta">{{ r.time }} min · ≈{{ r.calories }} kcal · {{ r.skill }}</span>
+      </span>
+      {% if r.allergens %}
+      <span class="rrow-tags">
+        {% for a in r.allergens %}<span class="tag">{{ a|titlecase }}</span>{% endfor %}
+      </span>
+      {% endif %}
+      <span class="rrow-chevron" aria-hidden="true">›</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="empty">
+  <p class="empty-big">Nothing fits all of that.</p>
+  <p>Try loosening a filter — drop the time limit, or add an appliance.</p>
+  <a class="reset" href="{{ url_for('index') }}">Clear filters</a>
+</div>
+{% endif %}
+
+{% endblock %}

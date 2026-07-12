@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Pixel Pantry{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  {% set ep = request.endpoint %}
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-wrap">
+        {% for category, msg in messages %}<div class="flash flash-{{ category }}">{{ msg }}</div>{% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <main>{% block content %}{% endblock %}</main>
+  <!-- Bottom tab bar for phones -->
+  <nav class="tabbar">
+    {% macro tab(href, label, active, path) %}
+      <a class="tabbar-item {{ 'active' if active }}" href="{{ href }}">
+        <span class="tabbar-ico">{{ path|safe }}</span><span class="tabbar-lbl">{{ label }}</span>
+      </a>
+    {% endmacro %}
+    {% set ICO_HOME = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>' %}
+    {% set ICO_CAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>' %}
+    {% set ICO_BAG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>' %}
+    {% set ICO_USERS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>' %}
+    {% set ICO_STAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9L12 3z"/></svg>' %}
+    {% if user %}
+      {{ tab(url_for('index'), 'Recipes', ep in ['index','recipe'], ICO_HOME) }}
+      {{ tab(url_for('planner'), 'Plan', ep=='planner', ICO_CAL) }}
+      {{ tab(url_for('grocery'), 'Grocery', ep=='grocery', ICO_BAG) }}
+      {{ tab(url_for('group_page'), 'Group', ep and ep.startswith('group'), ICO_USERS) }}
+      {{ tab(url_for('profile'), 'Profile', ep in ['profile','settings'], ICO_STAR) }}
+    {% else %}
+      {{ tab(url_for('index'), 'Recipes', ep in ['index','recipe'], ICO_HOME) }}
+      {{ tab(url_for('login'), 'Log in', ep=='login', ICO_USERS) }}
+      {{ tab(url_for('signup'), 'Sign up', ep=='signup', ICO_STAR) }}
+    {% endif %}
+  </nav>
+
+  {% if prefs %}
+  <script>
+    window.PANTRY_PREFS = {{ prefs|tojson }};
+    (function(){
+      const p = window.PANTRY_PREFS;
+      if (!p || !("Notification" in window) || Notification.permission !== "granted") return;
+      const now = new Date();
+      [["Breakfast", p.breakfast], ["Lunch", p.lunch], ["Dinner", p.dinner]].forEach(([label, hm]) => {
+        if (!hm) return;
+        const [h, m] = hm.split(":").map(Number);
+        const meal = new Date(); meal.setHours(h, m, 0, 0);
+        const fireAt = new Date(meal.getTime() - p.lead * 60000);
+        const delay = fireAt - now;
+        if (delay > 0 && delay < 86400000) {
+          setTimeout(() => new Notification("Pixel Pantry",
+            { body: `${label} in ${p.lead} min — time to start cooking!` }), delay);
+        }
+      });
+    })();
+  </script>
+  {% endif %}
+  {% block scripts %}{% endblock %}
+</body>
+</html>

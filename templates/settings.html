@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Settings · Pixel Pantry{% endblock %}
+{% block content %}
+<div class="auth">
+  <p class="eyebrow">Settings</p>
+  <h1><i>Meal reminders</i></h1>
+  <form method="post" class="auth-form" action="{{ url_for('settings') }}">
+    <label class="field"><span>Breakfast</span>
+      <input type="time" name="breakfast_time" value="{{ u['breakfast_time'] or '08:00' }}"></label>
+    <label class="field"><span>Lunch</span>
+      <input type="time" name="lunch_time" value="{{ u['lunch_time'] or '12:30' }}"></label>
+    <label class="field"><span>Dinner</span>
+      <input type="time" name="dinner_time" value="{{ u['dinner_time'] or '18:30' }}"></label>
+    <label class="field"><span>Remind me before a meal</span>
+      <select name="reminder_minutes">
+        {% for o in options %}
+          <option value="{{ o }}" {{ 'selected' if u['reminder_minutes'] == o }}>
+            {{ 'No reminders' if o == 0 else o ~ ' minutes before' }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <button type="submit" class="apply">Save preferences</button>
+  </form>
+
+  <div class="settings-logout">
+    <a class="logout-btn" href="{{ url_for('logout') }}">Log out</a>
+  </div>
+</div>
+{% endblock %}

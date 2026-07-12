@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}Profile · Pixel Pantry{% endblock %}
+{% block content %}
+
+<div class="profile-top">
+  <a class="settings-link" href="{{ url_for('settings') }}">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 8 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H2a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 3.6 8a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H8a1.65 1.65 0 0 0 1-1.51V2a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V8a1.65 1.65 0 0 0 1.51 1H22a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    Settings
+  </a>
+</div>
+
+<section class="profile-head">
+  <div class="level-badge">
+    <span class="level-num">{{ stats.level }}</span>
+    <span class="level-word pixel-label">LVL</span>
+  </div>
+  <div class="profile-headtext">
+    <p class="eyebrow">{{ user['username'] }}</p>
+    <h1>{{ stats.points }} points</h1>
+    <div class="xp-bar" role="progressbar" aria-valuenow="{{ stats.progress }}">
+      <span style="width: {{ stats.progress }}%"></span>
+    </div>
+    <p class="xp-note">{{ stats.to_next }} points to level {{ stats.level + 1 }}</p>
+  </div>
+</section>
+
+<!-- headline stats -->
+<div class="stat-cards">
+  <div class="stat-card"><span class="stat-num">{{ stats.meals }}</span><span class="stat-lbl">meals cooked</span></div>
+  <div class="stat-card"><span class="stat-num">{{ stats.streak }}</span><span class="stat-lbl">day streak</span></div>
+  <div class="stat-card"><span class="stat-num">{{ stats.earned }}/{{ stats.total_badges }}</span><span class="stat-lbl">badges</span></div>
+</div>
+
+<!-- badges -->
+<h2 class="section-h">Badges</h2>
+<ul class="badge-grid">
+  {% for b in badges %}
+  <li class="badge {{ 'earned' if b.earned else 'locked' }}">
+    <div class="badge-icon"><img src="{{ url_for('static', filename='icons/' + b.icon) }}" alt="" width="48" height="48"></div>
+    <p class="badge-name">{{ b.name }}</p>
+    <p class="badge-desc">{{ b.desc }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- nutrition summary (informational) -->
+<h2 class="section-h">Kitchen summary</h2>
+<div class="summary">
+  <div class="summary-nums">
+    <div><dt>Cooked this week</dt><dd>{{ "{:,}".format(stats.week_cal) }} <small>kcal</small></dd></div>
+    <div><dt>All-time cooked</dt><dd>{{ "{:,}".format(stats.total_cal) }} <small>kcal</small></dd></div>
+    <div><dt>Average per meal</dt><dd>{{ stats.avg_cal }} <small>kcal</small></dd></div>
+  </div>
+  {% if cats %}
+  <div class="cat-bars">
+    <p class="pixel-label">What you cook</p>
+    {% for name, count in cats %}
+    <div class="cat-row">
+      <span class="cat-name">{{ name|capitalize }}</span>
+      <span class="cat-bar" style="--tint: {{ tints.get(name, '#EDE6DA') }}">
+        <span class="cat-fill" style="width: {{ (count / cats[0][1] * 100)|round }}%"></span>
+      </span>
+      <span class="cat-count">{{ count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <p class="est">Calorie figures are estimates, shown for reference.</p>
+</div>
+
+<!-- recent activity -->
+{% if recent %}
+<h2 class="section-h">Recently cooked</h2>
+<ul class="recent-list">
+  {% for c in recent %}
+  <li>
+    <img src="{{ url_for('static', filename='icons/' + c.icon) }}" alt="" width="34" height="34">
+    <span class="recent-name">{{ c.name }}</span>
+    <span class="recent-when">{{ c.when }}</span>
+    <span class="recent-pts">+{{ c.points }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="empty">
+  <p class="empty-big">No meals cooked yet.</p>
+  <p>Open a recipe and hit <strong>Mark as cooked</strong> to start earning points.</p>
+  <a class="reset" href="{{ url_for('index') }}">Browse recipes</a>
+</div>
+{% endif %}
+
+{% endblock %}

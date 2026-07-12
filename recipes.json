@@ -1,0 +1,1765 @@
+[
+  {
+    "name": "Microwave Mug Pancake",
+    "icon": "80_pancakes_dish.png",
+    "category": "breakfast",
+    "prep_time": 3,
+    "cook_time": 2,
+    "time": 5,
+    "servings": "1 mug",
+    "skill": "easy",
+    "blurb": "A single fluffy pancake, no pan, no flip, in ninety seconds.",
+    "description": "When you want pancakes but not the stack, the pan, or the cleanup, this is the answer. Everything mixes in one mug and cooks in the microwave, so it's the fastest warm breakfast you can make before an early class.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "4 tbsp (30 g) all-purpose flour",
+      "1 tbsp granulated sugar",
+      "1/2 tsp baking powder",
+      "Pinch of salt",
+      "3 tbsp whole milk",
+      "1 tbsp unsalted butter, melted",
+      "1 large egg",
+      "Pure maple syrup or berry jam, to serve"
+    ],
+    "steps": [
+      "Gather your ingredients and pick a large, wide microwave-safe mug — the batter roughly doubles as it cooks, so give it room.",
+      "Add the flour, sugar, baking powder, and salt to the mug and stir with a fork to combine.",
+      "Pour in the milk, melted butter, and egg. Whisk with the fork until just smooth; a few small lumps are fine, and over-mixing makes it rubbery.",
+      "Microwave on high for 70 seconds. If the top still looks wet, add 10–15 seconds at a time until it springs back when touched.",
+      "Let it stand 1 minute (it firms up as it cools), then run a spoon around the edge and tip it out. Top with syrup or jam."
+    ],
+    "tips": [
+      "No baking powder? Use 1/2 tsp of self-raising flour swap or just accept a denser, still-tasty cake.",
+      "Stir a spoonful of chocolate chips or blueberries into the batter before cooking."
+    ],
+    "id": 1,
+    "slug": "microwave-mug-pancake",
+    "calories": 380,
+    "base_servings": 1
+  },
+  {
+    "name": "Toaster Waffle Upgrade",
+    "icon": "102_waffle_dish.png",
+    "category": "breakfast",
+    "prep_time": 5,
+    "cook_time": 3,
+    "time": 8,
+    "servings": "1 serving",
+    "skill": "easy",
+    "blurb": "Frozen waffles, dressed up enough to feel deliberate.",
+    "description": "Frozen waffles are a dorm staple, but three minutes of effort turns them into something you'd actually photograph. No waffle iron required — the toaster does the work.",
+    "appliances": [
+      "toaster"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "2 frozen Belgian-style waffles",
+      "1/3 cup full-fat Greek yogurt (or whipped cream)",
+      "1/2 cup fresh mixed berries (strawberries, blueberries)",
+      "1 tbsp runny honey or maple syrup",
+      "1 tbsp chopped toasted almonds or granola (optional)"
+    ],
+    "steps": [
+      "Toast the waffles until deep golden and crisp — a shade darker than you think, so they stay sturdy under toppings.",
+      "While they toast, spoon the yogurt into a small bowl and rinse the berries.",
+      "Spread the yogurt over the hot waffles, then pile on the berries.",
+      "Drizzle with honey, scatter nuts or granola if using, and eat right away while the contrast of hot and cold is at its best."
+    ],
+    "tips": [
+      "Swap berries for sliced banana and a smear of peanut butter for a heartier version.",
+      "A pinch of cinnamon in the yogurt makes it taste like more effort than it was."
+    ],
+    "id": 2,
+    "slug": "toaster-waffle-upgrade",
+    "calories": 320,
+    "base_servings": 1
+  },
+  {
+    "name": "Perfect Fried Egg",
+    "icon": "39_friedegg_dish.png",
+    "category": "breakfast",
+    "prep_time": 1,
+    "cook_time": 4,
+    "time": 5,
+    "servings": "1 egg",
+    "skill": "easy",
+    "blurb": "The one technique that quietly fixes half your meals.",
+    "description": "A properly fried egg — set white, runny yolk, no rubbery edges — turns plain rice, toast, or noodles into a meal. It takes four minutes and one pan, and once you can do it, you'll do it constantly.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 large egg",
+      "1 tsp unsalted butter or olive oil",
+      "Flaky sea salt",
+      "Freshly ground black pepper"
+    ],
+    "steps": [
+      "Crack the egg into a small bowl first — this keeps shell out of the pan and lets you slide it in gently.",
+      "Heat the oil or butter in a non-stick pan over medium heat until it shimmers (butter should foam but not brown).",
+      "Slide the egg in and let it cook undisturbed for about 2 minutes, until the white is mostly set but the edges aren't yet browning.",
+      "For a set top, cover the pan with a lid for 30–45 seconds to steam the surface; for sunny-side-up, leave it uncovered.",
+      "Season with salt and pepper and slide onto whatever it's improving."
+    ],
+    "tips": [
+      "Lower heat gives you tender whites; high heat gives you crispy, lacy edges — both are good, pick your mood.",
+      "Don't salt the yolk until serving; salt sitting on a raw yolk can leave white speckles."
+    ],
+    "id": 3,
+    "slug": "perfect-fried-egg",
+    "calories": 95,
+    "base_servings": 1
+  },
+  {
+    "name": "Cheesy Omelette",
+    "icon": "74_omlet_dish.png",
+    "category": "breakfast",
+    "prep_time": 4,
+    "cook_time": 6,
+    "time": 10,
+    "servings": "1 serving",
+    "skill": "intermediate",
+    "blurb": "Protein you can make before an 8am with your eyes half open.",
+    "description": "A folded, cheese-filled omelette is cheap, fast, and genuinely filling. The trick is low heat and pulling it off the pan while it's still just barely soft in the middle.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "egg",
+      "milk"
+    ],
+    "ingredients": [
+      "2 large eggs",
+      "1 tbsp whole milk",
+      "1/4 cup grated sharp cheddar (or gruyère)",
+      "1 tsp unsalted butter",
+      "Salt",
+      "Black pepper",
+      "Optional: chopped chives or a pinch of chili flakes"
+    ],
+    "steps": [
+      "Beat the eggs with the milk, a pinch of salt, and pepper until fully combined and slightly frothy.",
+      "Melt the butter in a non-stick pan over medium-low heat, swirling to coat the base.",
+      "Pour in the eggs. As they begin to set at the edges, drag those edges to the center with a spatula and tilt the pan so raw egg flows underneath.",
+      "When the top is just barely wet, scatter the cheese over one half.",
+      "Fold the empty half over the cheese, cook 20 more seconds, then slide onto a plate. Residual heat finishes it."
+    ],
+    "tips": [
+      "Take it off the heat a touch sooner than feels right — it keeps cooking on the plate.",
+      "Grated cheese melts faster than sliced; pre-shredded is fine here."
+    ],
+    "id": 4,
+    "slug": "cheesy-omelette",
+    "calories": 330,
+    "base_servings": 1
+  },
+  {
+    "name": "Loaded Bagel",
+    "icon": "21_bagel_dish.png",
+    "category": "breakfast",
+    "prep_time": 5,
+    "cook_time": 2,
+    "time": 7,
+    "servings": "1 bagel",
+    "skill": "easy",
+    "blurb": "Five ingredients, zero cooking, feels like a cafe.",
+    "description": "A good loaded bagel is more assembly than recipe, but the ratio matters: toasted bagel, generous cream cheese, something fresh, and a hit of seasoning. It's a two-minute breakfast that tastes like you left the building for it.",
+    "appliances": [
+      "toaster"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "1 plain or sesame bagel, halved",
+      "2–3 tbsp full-fat cream cheese",
+      "1/2 ripe tomato, sliced",
+      "A few thin slices of red onion",
+      "1/2 tsp everything bagel seasoning",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Toast the bagel halves until golden and crisp at the edges.",
+      "Spread cream cheese thickly over both cut sides while they're still warm so it softens slightly.",
+      "Layer on the tomato and onion, then season with salt, pepper, and the everything seasoning.",
+      "Close it up, or leave it open-faced if the pile is ambitious. Eat immediately."
+    ],
+    "tips": [
+      "Add smoked salmon or a fried egg to turn it into a full meal.",
+      "No everything seasoning? A mix of sesame seeds, dried garlic, and flaky salt does the job."
+    ],
+    "id": 5,
+    "slug": "loaded-bagel",
+    "calories": 350,
+    "base_servings": 1
+  },
+  {
+    "name": "Crispy Oven Bacon",
+    "icon": "14_bacon_dish.png",
+    "category": "breakfast",
+    "prep_time": 3,
+    "cook_time": 18,
+    "time": 21,
+    "servings": "3–4 servings",
+    "skill": "easy",
+    "blurb": "Oven bacon: no splatter, no babysitting, evenly crisp.",
+    "description": "Frying bacon means grease everywhere and uneven strips. The oven cooks it flat and even while you do something else, and cleanup is a single lined tray. This is the method restaurants use for a reason.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [],
+    "allergens": [],
+    "ingredients": [
+      "6–8 strips streaky (American-style) bacon",
+      "Freshly ground black pepper (optional)"
+    ],
+    "steps": [
+      "Arrange a rack in the middle of the oven and heat it to 400°F (200°C).",
+      "Line a rimmed baking tray with foil or parchment and lay the bacon out in a single layer, not overlapping.",
+      "Crack pepper over the top if you like, then bake for 15–20 minutes depending on thickness and how crisp you want it.",
+      "Start checking at 15 minutes; it goes from perfect to overdone quickly.",
+      "Transfer to a paper-towel-lined plate to drain for a minute before eating."
+    ],
+    "tips": [
+      "Save the rendered fat in a jar — it's excellent for frying eggs or potatoes.",
+      "For extra-flat strips, lay a second sheet of parchment and another tray on top as a weight."
+    ],
+    "id": 6,
+    "slug": "crispy-oven-bacon",
+    "calories": 180,
+    "base_servings": 3
+  },
+  {
+    "name": "Dorm Ramen, Upgraded",
+    "icon": "87_ramen.png",
+    "category": "lunch",
+    "prep_time": 5,
+    "cook_time": 10,
+    "time": 15,
+    "servings": "1 serving",
+    "skill": "easy",
+    "blurb": "The 60-cent brick, treated with a little respect.",
+    "description": "Instant ramen is fine on its own, but a soft egg, some aromatics, and a couple of pantry sauces turn it into an actual bowl of food. This is the upgrade that makes the cheapest meal in your cupboard feel intentional.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat",
+      "egg",
+      "soy"
+    ],
+    "ingredients": [
+      "1 pack instant ramen (chicken or shoyu), with seasoning",
+      "1 large egg",
+      "1 green onion, sliced",
+      "1 tsp light soy sauce",
+      "1/2 tsp toasted sesame oil",
+      "Optional: handful of frozen sweetcorn or baby spinach",
+      "Optional: chili crisp, to finish"
+    ],
+    "steps": [
+      "Bring about 2 cups of water to a boil in a small pot.",
+      "Lower a whole egg in on a spoon and let it simmer 6 minutes for a jammy yolk, then lift it out into cold water and peel.",
+      "Add the noodles and any vegetables to the same water and cook for the time on the pack, usually 3 minutes.",
+      "Stir in the seasoning packet, soy sauce, and sesame oil.",
+      "Pour everything into a bowl, halve the egg on top, scatter with green onion, and add chili crisp if you want heat."
+    ],
+    "tips": [
+      "Only add half the seasoning packet if you find instant ramen too salty; the soy and sesame carry a lot of flavor.",
+      "No time to soft-boil? Crack the egg straight into the simmering broth and poach it for 3 minutes instead."
+    ],
+    "id": 7,
+    "slug": "dorm-ramen-upgraded",
+    "calories": 480,
+    "base_servings": 1
+  },
+  {
+    "name": "Grilled Cheese",
+    "icon": "93_sandwich_dish.png",
+    "category": "lunch",
+    "prep_time": 3,
+    "cook_time": 8,
+    "time": 11,
+    "servings": "1 sandwich",
+    "skill": "easy",
+    "blurb": "The sandwich everyone claims to have perfected. You will too.",
+    "description": "A great grilled cheese is about patience and butter, not speed. Cook it low and slow so the cheese fully melts before the bread over-browns, and you get the pull everyone's after.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "2 thick slices sourdough or white sandwich bread",
+      "2 slices sharp cheddar or American (or a handful, grated)",
+      "1–2 tbsp salted butter, softened",
+      "Optional: sliced tomato or a smear of Dijon"
+    ],
+    "steps": [
+      "Butter one side of each slice of bread right to the edges.",
+      "Place one slice butter-side-down in a cold non-stick pan, add the cheese (and any extras), and top with the second slice, butter-side-up.",
+      "Set the heat to medium-low and cook for 3–4 minutes, pressing gently with a spatula, until the underside is deep golden.",
+      "Flip carefully and cook the second side 2–3 minutes more, until the cheese is fully melted and both sides are crisp.",
+      "Rest for a minute before cutting so the cheese sets slightly and doesn't all escape."
+    ],
+    "tips": [
+      "Grated cheese melts far faster than slices and gives a more even pull.",
+      "Starting in a cold pan gives the cheese time to melt before the bread burns."
+    ],
+    "id": 8,
+    "slug": "grilled-cheese",
+    "calories": 410,
+    "base_servings": 1
+  },
+  {
+    "name": "Microwave Mac & Cheese",
+    "icon": "68_macncheese_dish.png",
+    "category": "lunch",
+    "prep_time": 2,
+    "cook_time": 10,
+    "time": 12,
+    "servings": "1 large serving",
+    "skill": "easy",
+    "blurb": "Real mac and cheese from a single mug. No box required.",
+    "description": "This is the one that proves you don't need a stovetop — or a blue box — for creamy mac and cheese. It cooks the pasta and the sauce in the same mug, so there's exactly one thing to wash.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 cup elbow macaroni",
+      "1/2 cup water",
+      "1/4 cup whole milk",
+      "1/2 cup grated sharp cheddar",
+      "Salt",
+      "Optional: pinch of mustard powder or paprika"
+    ],
+    "steps": [
+      "Combine the macaroni and water in a large microwave-safe mug (it will bubble up, so use one bigger than you think).",
+      "Microwave on high for 2 minutes, stir, then microwave in 1-minute bursts, stirring between each, until the pasta is tender and most of the water is absorbed — usually 3–4 minutes total.",
+      "Stir in the milk and grated cheese along with a pinch of salt and the mustard or paprika if using.",
+      "Microwave 30–45 seconds more, then stir hard until the sauce is smooth and glossy.",
+      "Let it sit 1 minute to thicken, then eat straight from the mug."
+    ],
+    "tips": [
+      "Watch it closely the first time — microwaves vary and pasta water loves to boil over.",
+      "A splash more milk at the end loosens the sauce if it tightens up."
+    ],
+    "id": 9,
+    "slug": "microwave-mac-and-cheese",
+    "calories": 520,
+    "base_servings": 1
+  },
+  {
+    "name": "Loaded Nachos",
+    "icon": "72_nacho_dish.png",
+    "category": "lunch",
+    "prep_time": 5,
+    "cook_time": 5,
+    "time": 10,
+    "servings": "2 servings",
+    "skill": "easy",
+    "blurb": "Dinner disguised as a snack. Share optional.",
+    "description": "Nachos live or die on layering — cheese needs to touch every chip, not just sit on top. Build them in layers and finish with fresh toppings after melting, and you've got a plate that eats like a meal.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "Big handful of salted tortilla chips",
+      "1 cup grated Monterey Jack or medium cheddar",
+      "1/4 cup pickled jalapeños",
+      "1/4 cup chunky salsa",
+      "2 tbsp sour cream",
+      "Optional: canned black beans, drained; sliced green onion"
+    ],
+    "steps": [
+      "Spread half the chips on a microwave-safe plate and scatter over half the cheese and beans if using.",
+      "Add the rest of the chips, then the rest of the cheese, so no layer is left bare.",
+      "Microwave in 30-second bursts until the cheese is fully melted, usually 1–1.5 minutes.",
+      "Top with jalapeños, salsa, sour cream, and green onion.",
+      "Eat immediately, ideally before anyone else notices."
+    ],
+    "tips": [
+      "For a crispier finish, use the oven at 400°F (200°C) for 8 minutes instead of the microwave.",
+      "Warm the beans first if adding them — cold beans cool the whole plate down."
+    ],
+    "id": 10,
+    "slug": "loaded-nachos",
+    "calories": 450,
+    "base_servings": 2
+  },
+  {
+    "name": "Egg Salad Sandwich",
+    "icon": "41_eggsalad_bowl.png",
+    "category": "lunch",
+    "prep_time": 5,
+    "cook_time": 12,
+    "time": 17,
+    "servings": "2 sandwiches",
+    "skill": "easy",
+    "blurb": "Cheap protein that keeps in the fridge for days.",
+    "description": "Egg salad is one of the best returns on effort in a small kitchen: boil once, and you've got sandwich filling for two or three days. The key is not overcooking the eggs and seasoning it properly.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "egg",
+      "wheat"
+    ],
+    "ingredients": [
+      "3 large eggs",
+      "2 tbsp full-fat mayonnaise",
+      "1 tsp Dijon mustard",
+      "1 green onion, finely sliced (optional)",
+      "Salt and pepper",
+      "4 slices soft white or wholemeal bread",
+      "Crisp romaine lettuce, to serve"
+    ],
+    "steps": [
+      "Place the eggs in a small pot, cover with cold water, and bring to a boil.",
+      "Once boiling, cook for 9 minutes, then drain and transfer to cold water to stop the cooking and make peeling easier.",
+      "Peel and roughly chop the eggs, then mash with the mayo, mustard, green onion, salt, and pepper — leave some texture rather than making it a paste.",
+      "Taste and adjust the seasoning; egg salad usually needs more salt than you'd expect.",
+      "Pile onto bread with lettuce, close, and cut in half."
+    ],
+    "tips": [
+      "Store the salad (not the assembled sandwich) in the fridge for up to 3 days.",
+      "A pinch of paprika or curry powder in the mix is a classic, cheap upgrade."
+    ],
+    "id": 11,
+    "slug": "egg-salad-sandwich",
+    "calories": 430,
+    "base_servings": 2
+  },
+  {
+    "name": "Garlic Bread",
+    "icon": "49_garlicbread_dish.png",
+    "category": "side",
+    "prep_time": 5,
+    "cook_time": 8,
+    "time": 13,
+    "servings": "3–4 servings",
+    "skill": "easy",
+    "blurb": "The side that makes any sad pasta look intentional.",
+    "description": "Homemade garlic bread beats the frozen kind and costs almost nothing. Soften real garlic into butter, bake until the edges crisp, and it turns a bowl of plain pasta into a proper dinner.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 day-old baguette (or ciabatta)",
+      "3 tbsp salted butter, softened",
+      "2 cloves fresh garlic, finely grated",
+      "1 tbsp chopped flat-leaf parsley",
+      "Pinch of salt",
+      "Optional: grated parmesan"
+    ],
+    "steps": [
+      "Heat the oven to 400°F (200°C).",
+      "Mash the garlic, parsley, and salt into the softened butter until evenly combined.",
+      "Split the baguette lengthwise (or lay out slices) and spread the garlic butter over the cut sides right to the edges.",
+      "Place on a tray and bake for 8–10 minutes, until the butter is bubbling and the edges are golden and crisp.",
+      "Scatter with parmesan if using and cut into pieces to serve warm."
+    ],
+    "tips": [
+      "For extra-crisp bread, broil for the final 1–2 minutes, watching closely so it doesn't burn.",
+      "Grate the garlic rather than chopping it so it spreads evenly and doesn't leave raw hot spots."
+    ],
+    "id": 12,
+    "slug": "garlic-bread",
+    "calories": 230,
+    "base_servings": 3
+  },
+  {
+    "name": "Oven Fries",
+    "icon": "45_frenchfries_dish.png",
+    "category": "side",
+    "prep_time": 10,
+    "cook_time": 25,
+    "time": 35,
+    "servings": "2 servings",
+    "skill": "easy",
+    "blurb": "Crispier than you'd expect from an oven, with zero deep-frying.",
+    "description": "The secret to oven fries that actually crisp is soaking off the surface starch and giving them room on the tray. Do that and you get fries with crunchy edges and fluffy middles, no vat of oil involved.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegan"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 medium russet potatoes (high-starch — they crisp best)",
+      "1 tbsp neutral oil",
+      "1/2 tsp salt",
+      "1/2 tsp smoked paprika",
+      "Black pepper"
+    ],
+    "steps": [
+      "Cut the potatoes into even sticks about the width of your finger — even sizing matters more than shape.",
+      "Soak them in cold water for 10 minutes to draw out surface starch, then drain and dry very thoroughly with a towel.",
+      "Toss with the oil, salt, paprika, and pepper until evenly coated.",
+      "Spread in a single layer on a baking tray with space between them and bake at 425°F (220°C) for 20–25 minutes.",
+      "Flip halfway through, and pull them when deep golden and crisp at the edges."
+    ],
+    "tips": [
+      "Drying the potatoes well is the single most important step — wet fries steam instead of crisping.",
+      "Crowding the tray traps steam; use two trays if you're doubling the batch."
+    ],
+    "id": 13,
+    "slug": "oven-fries",
+    "calories": 250,
+    "base_servings": 2
+  },
+  {
+    "name": "Weeknight Chickpea Curry",
+    "icon": "33_curry_dish.png",
+    "category": "dinner",
+    "prep_time": 10,
+    "cook_time": 20,
+    "time": 30,
+    "servings": "3 servings",
+    "skill": "intermediate",
+    "blurb": "One pot, freezer-friendly, and better the next day.",
+    "description": "This is a forgiving, pantry-driven curry: canned chickpeas and coconut milk do the heavy lifting, and a spoon of curry paste means you don't need a spice rack. It reheats beautifully, so make the full batch.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian",
+      "vegan"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 tbsp neutral oil",
+      "1 yellow onion, diced",
+      "2 cloves garlic, minced",
+      "2 tbsp Thai red or yellow curry paste (or 1 tbsp curry powder)",
+      "1 can (400 g) chickpeas, drained",
+      "1 can (400 ml) full-fat coconut milk",
+      "1 handful baby spinach (optional)",
+      "Salt",
+      "Cooked basmati rice, to serve"
+    ],
+    "steps": [
+      "Heat the oil in a pot over medium heat and cook the onion until soft and translucent, about 5 minutes.",
+      "Add the garlic and curry paste and stir for 1 minute until fragrant.",
+      "Tip in the chickpeas and coconut milk, stir, and bring to a gentle simmer.",
+      "Simmer uncovered for 12–15 minutes, until slightly thickened, stirring occasionally.",
+      "Stir in the spinach until wilted, season with salt to taste, and serve over rice."
+    ],
+    "tips": [
+      "A squeeze of lime or lemon at the end brightens the whole pot.",
+      "It keeps in the fridge for 3 days and freezes well; the flavor deepens overnight."
+    ],
+    "id": 14,
+    "slug": "weeknight-chickpea-curry",
+    "calories": 480,
+    "base_servings": 3
+  },
+  {
+    "name": "Spaghetti Aglio e Olio",
+    "icon": "94_spaghetti.png",
+    "category": "dinner",
+    "prep_time": 5,
+    "cook_time": 15,
+    "time": 20,
+    "servings": "2 servings",
+    "skill": "intermediate",
+    "blurb": "Five ingredients, restaurant energy, ready in 20 minutes.",
+    "description": "This classic Roman pasta is proof that cheap and simple can taste luxurious. The only technique that matters is emulsifying the garlicky oil with a little starchy pasta water so it clings to every strand.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian",
+      "vegan"
+    ],
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "200 g dried spaghetti",
+      "1/3 cup extra-virgin olive oil",
+      "4 cloves garlic, thinly sliced",
+      "1/2 tsp red chili flakes",
+      "Handful of flat-leaf parsley, chopped",
+      "Salt",
+      "Optional: grated parmesan (omit to keep vegan)"
+    ],
+    "steps": [
+      "Bring a large pot of well-salted water to a boil and cook the spaghetti until just shy of al dente. Before draining, scoop out a mug of the pasta water.",
+      "Meanwhile, warm the olive oil in a wide pan over low heat and add the sliced garlic and chili flakes.",
+      "Cook gently for 2–3 minutes until the garlic is pale gold — do not let it brown, or it turns bitter.",
+      "Add the drained pasta to the pan along with a splash of the reserved water and toss vigorously for a minute; the water and oil should turn silky and cling to the pasta.",
+      "Stir through the parsley, season, add more pasta water if it looks dry, and serve."
+    ],
+    "tips": [
+      "Low heat on the garlic is non-negotiable; browned garlic will make the whole dish bitter.",
+      "Keep the reserved pasta water nearby — a splash fixes almost any sauce that looks too tight."
+    ],
+    "id": 15,
+    "slug": "spaghetti-aglio-e-olio",
+    "calories": 520,
+    "base_servings": 2
+  },
+  {
+    "name": "Smashburger",
+    "icon": "16_burger_dish.png",
+    "category": "dinner",
+    "prep_time": 8,
+    "cook_time": 10,
+    "time": 18,
+    "servings": "1 burger",
+    "skill": "intermediate",
+    "blurb": "Thin, crispy-edged, better than the drive-through.",
+    "description": "The smashburger technique — pressing a loose ball of beef hard onto a screaming-hot pan — creates a deeply browned, crispy crust you can't get any other way. It's fast, cheap, and genuinely restaurant-quality.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "150 g 80/20 ground beef (chuck)",
+      "1 soft potato burger bun",
+      "1 slice American cheese",
+      "Salt and pepper",
+      "A little neutral oil",
+      "Toppings: dill pickles, sliced onion, burger sauce"
+    ],
+    "steps": [
+      "Loosely roll the beef into a ball — don't compact it. Season a hot, lightly oiled pan.",
+      "Toast the cut sides of the bun in the pan first, then set aside.",
+      "Get the pan very hot. Place the ball in and immediately smash it flat with a spatula, pressing hard for 10 seconds to maximize crust.",
+      "Season the top, cook 2 minutes until the edges are lacy and brown, then flip.",
+      "Lay the cheese on, cook 1 more minute, then build on the toasted bun with your toppings."
+    ],
+    "tips": [
+      "A really hot pan is the whole trick — if it's not smoking slightly, wait longer.",
+      "Ground beef with some fat (80/20) gives the best crust and juiciest result."
+    ],
+    "id": 16,
+    "slug": "smashburger",
+    "calories": 600,
+    "base_servings": 1
+  },
+  {
+    "name": "Sheet-Pan Roast Chicken",
+    "icon": "86_roastedchicken_dish.png",
+    "category": "dinner",
+    "prep_time": 10,
+    "cook_time": 40,
+    "time": 50,
+    "servings": "2–3 servings",
+    "skill": "intermediate",
+    "blurb": "One tray, one cleanup, leftovers built in.",
+    "description": "Everything roasts together on a single tray: chicken thighs render their fat over the potatoes, which crisp up underneath. It's close to hands-off, and the leftovers make lunches for days.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [],
+    "allergens": [],
+    "ingredients": [
+      "4 bone-in, skin-on chicken thighs",
+      "2 Yukon Gold or a handful of baby potatoes, chunked",
+      "1 yellow onion, cut into wedges",
+      "2 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "1 tsp salt",
+      "Black pepper",
+      "Optional: lemon wedges, fresh rosemary"
+    ],
+    "steps": [
+      "Heat the oven to 400°F (200°C).",
+      "Toss the potatoes and onion with half the oil, salt, and pepper and spread them on a baking tray.",
+      "Rub the chicken with the remaining oil, paprika, salt, and pepper and nestle it skin-side up among the vegetables.",
+      "Roast for 35–40 minutes, until the chicken skin is crisp and the juices run clear when pierced at the thickest part.",
+      "Rest for 5 minutes before serving, spooning the pan juices over everything."
+    ],
+    "tips": [
+      "Give the vegetables space so they roast rather than steam.",
+      "If the skin isn't crisp enough at the end, broil for 2–3 minutes to finish."
+    ],
+    "id": 17,
+    "slug": "sheet-pan-roast-chicken",
+    "calories": 540,
+    "base_servings": 3
+  },
+  {
+    "name": "Pan-Seared Salmon",
+    "icon": "89_salmon_dish.png",
+    "category": "dinner",
+    "prep_time": 5,
+    "cook_time": 10,
+    "time": 15,
+    "servings": "1 serving",
+    "skill": "intermediate",
+    "blurb": "Crisp skin, quick, and genuinely impressive for a date.",
+    "description": "A good seared salmon fillet takes ten minutes and looks like you tried much harder. Dry skin and a patient sear are all it takes for restaurant-style crackling skin.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "pescatarian"
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "ingredients": [
+      "1 skin-on salmon fillet",
+      "1 tsp neutral oil",
+      "Flaky salt",
+      "Black pepper",
+      "Lemon wedge, to serve"
+    ],
+    "steps": [
+      "Pat the salmon completely dry with paper towel, especially the skin, and season both sides with salt and pepper.",
+      "Heat the oil in a non-stick pan over medium-high until shimmering.",
+      "Lay the fillet in skin-side down and press gently for a few seconds so it doesn't curl. Cook undisturbed for 4–5 minutes until the skin is crisp and releases easily.",
+      "Flip and cook the flesh side for 1–2 minutes, until just opaque in the center.",
+      "Rest for a minute, then serve with a squeeze of lemon."
+    ],
+    "tips": [
+      "Drying the skin is what makes it crisp; skip that and it'll steam and stick.",
+      "Salmon keeps cooking off the heat, so pull it while the very center is still slightly translucent."
+    ],
+    "id": 18,
+    "slug": "pan-seared-salmon",
+    "calories": 370,
+    "base_servings": 1
+  },
+  {
+    "name": "Weeknight Meatballs",
+    "icon": "70_meatball_dish.png",
+    "category": "dinner",
+    "prep_time": 15,
+    "cook_time": 15,
+    "time": 30,
+    "servings": "3 servings",
+    "skill": "intermediate",
+    "blurb": "Batch these on Sunday, eat well all week.",
+    "description": "Simple meatballs simmered in jarred sauce are a batch-cooking hero: make a big pot, and you've got pasta dinners, sub sandwiches, or a snack on hand. The breadcrumb-and-egg binder keeps them tender.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat",
+      "egg"
+    ],
+    "ingredients": [
+      "300 g 80/20 ground beef",
+      "1 large egg",
+      "1/4 cup panko breadcrumbs",
+      "1 clove garlic, minced",
+      "2 tbsp grated parmesan (optional)",
+      "Salt and pepper",
+      "1 jar (about 400 g) marinara sauce",
+      "Dried spaghetti, to serve"
+    ],
+    "steps": [
+      "Mix the beef, egg, breadcrumbs, garlic, parmesan, salt, and pepper until just combined — overworking makes tough meatballs.",
+      "Roll into balls about the size of a golf ball; you should get 12–15.",
+      "Brown them in a little oil in a wide pan over medium-high heat, turning to color all sides (they don't need to cook through yet).",
+      "Pour in the marinara, bring to a simmer, and cook gently for 12–15 minutes until the meatballs are cooked through and the sauce has thickened.",
+      "Serve over pasta, or cool and store for the week."
+    ],
+    "tips": [
+      "Wet your hands slightly when rolling so the mix doesn't stick.",
+      "They freeze well cooked; reheat straight from frozen in a little extra sauce."
+    ],
+    "id": 19,
+    "slug": "weeknight-meatballs",
+    "calories": 480,
+    "base_servings": 3
+  },
+  {
+    "name": "Homemade Pizza",
+    "icon": "82_pizza_dish.png",
+    "category": "dinner",
+    "prep_time": 10,
+    "cook_time": 15,
+    "time": 25,
+    "servings": "1–2 servings",
+    "skill": "intermediate",
+    "blurb": "Cheaper than delivery, and yours turns out how you like it.",
+    "description": "Using a store-bought base, homemade pizza is faster than delivery and endlessly customizable. The main lessons: don't drown it in sauce, and get the oven as hot as it goes.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "1 pizza base or naan",
+      "1/3 cup pizza sauce or passata",
+      "1 cup grated low-moisture mozzarella",
+      "Toppings of choice (peppers, mushrooms, olives)",
+      "1 tsp olive oil",
+      "Pinch of dried oregano"
+    ],
+    "steps": [
+      "Heat the oven as hot as it will go, ideally 475°F (245°C), with a tray inside to preheat.",
+      "Spread a thin, even layer of sauce over the base, leaving a border for the crust.",
+      "Scatter the mozzarella evenly, then add your toppings — don't overload it or the middle stays soggy.",
+      "Drizzle with a little olive oil and the oregano, then slide onto the hot tray.",
+      "Bake for 12–15 minutes until the cheese is bubbling and the crust is golden and crisp."
+    ],
+    "tips": [
+      "A hot preheated tray gives a much crispier base than a cold one.",
+      "Pre-cook watery toppings like mushrooms briefly so they don't leave the pizza soggy."
+    ],
+    "id": 20,
+    "slug": "homemade-pizza",
+    "calories": 600,
+    "base_servings": 2
+  },
+  {
+    "name": "Steak Night",
+    "icon": "96_steak_dish.png",
+    "category": "dinner",
+    "prep_time": 5,
+    "cook_time": 15,
+    "time": 20,
+    "servings": "1 serving",
+    "skill": "intermediate",
+    "blurb": "The treat-yourself dinner. The rest is the secret.",
+    "description": "Cooking a steak well at home is mostly about a hot pan, seasoning early, and resting it after. Do those three things and a cheap cut turns into a genuinely special meal.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [],
+    "ingredients": [
+      "1 ribeye or sirloin steak (about 200 g)",
+      "1 tsp neutral oil",
+      "Flaky salt",
+      "Black pepper",
+      "1 tbsp unsalted butter",
+      "1 clove garlic, crushed"
+    ],
+    "steps": [
+      "Take the steak out of the fridge 30 minutes ahead and salt it generously on both sides.",
+      "Pat it dry, then heat the oil in a heavy pan until it's just starting to smoke.",
+      "Sear the steak for about 3 minutes on each side for medium-rare, without moving it, to build a deep crust.",
+      "Add the butter and crushed garlic in the last minute and spoon the foaming butter over the steak.",
+      "Rest the steak on a board for 5 minutes before slicing against the grain — this keeps it juicy."
+    ],
+    "tips": [
+      "Resting is not optional; cutting in immediately spills all the juices onto the board.",
+      "A cheap instant-read thermometer takes the guesswork out: 130°F (54°C) is medium-rare."
+    ],
+    "id": 21,
+    "slug": "steak-night",
+    "calories": 560,
+    "base_servings": 1
+  },
+  {
+    "name": "Beef Tacos",
+    "icon": "100_taco_dish.png",
+    "category": "dinner",
+    "prep_time": 10,
+    "cook_time": 10,
+    "time": 20,
+    "servings": "2–3 servings",
+    "skill": "easy",
+    "blurb": "Fast, cheap, endlessly customizable. Taco Tuesday, sorted.",
+    "description": "Ground beef tacos are one of the highest-reward quick dinners: one pan, twenty minutes, and everyone builds their own. Keep a taco spice blend around and it becomes a weekly default.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "250 g 80/20 ground beef",
+      "1 tbsp taco seasoning (or cumin, paprika, garlic powder)",
+      "4–6 small corn tortillas",
+      "1 cup shredded romaine lettuce",
+      "1/2 cup grated cheddar",
+      "Salsa, sour cream, lime, to serve"
+    ],
+    "steps": [
+      "Brown the beef in a dry pan over medium-high heat, breaking it up, until no longer pink.",
+      "Drain off excess fat, then stir in the taco seasoning and a splash of water and simmer 2–3 minutes until glossy.",
+      "Warm the tortillas in a dry pan or microwave until soft and pliable.",
+      "Fill each tortilla with beef, then top with lettuce, cheese, salsa, and sour cream.",
+      "Finish with a squeeze of lime and eat straight away."
+    ],
+    "tips": [
+      "Toasting the tortillas in a dry pan for 20 seconds a side makes a big difference.",
+      "Swap the beef for a can of drained, seasoned black beans to make it vegetarian."
+    ],
+    "id": 22,
+    "slug": "beef-tacos",
+    "calories": 450,
+    "base_servings": 3
+  },
+  {
+    "name": "Pan-Fried Pork Dumplings",
+    "icon": "37_dumplings_dish.png",
+    "category": "dinner",
+    "prep_time": 5,
+    "cook_time": 10,
+    "time": 15,
+    "servings": "2 servings",
+    "skill": "easy",
+    "blurb": "Freezer dumplings with a crispy bottom, in one pan.",
+    "description": "The potsticker method — fry, then steam, then fry again — gives frozen dumplings a crackly golden base and a tender top. It's a five-minute skill that makes the freezer aisle taste homemade.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat",
+      "soy",
+      "sesame"
+    ],
+    "ingredients": [
+      "12 frozen pork dumplings (gyoza)",
+      "1 tbsp neutral oil",
+      "1/3 cup water",
+      "For the dip: 2 tbsp light soy sauce, 1 tsp rice vinegar, a few drops sesame oil, chili to taste"
+    ],
+    "steps": [
+      "Heat the oil in a non-stick pan over medium-high and arrange the frozen dumplings flat-side down in a single layer.",
+      "Fry undisturbed for 2 minutes until the bottoms are golden.",
+      "Carefully add the water and immediately cover with a lid — it will steam vigorously. Cook covered for 5–6 minutes until the water has evaporated and the dumplings are cooked through.",
+      "Uncover and let them fry another minute to re-crisp the bases.",
+      "Stir together the dipping sauce ingredients and serve alongside."
+    ],
+    "tips": [
+      "Don't thaw the dumplings first; they cook straight from frozen.",
+      "Keep the lid on while the water steams — that's what cooks the tops through."
+    ],
+    "id": 23,
+    "slug": "pan-fried-pork-dumplings",
+    "calories": 380,
+    "base_servings": 2
+  },
+  {
+    "name": "Burrito Bowl",
+    "icon": "19_burrito_dish.png",
+    "category": "dinner",
+    "prep_time": 10,
+    "cook_time": 10,
+    "time": 20,
+    "servings": "1 large bowl",
+    "skill": "easy",
+    "blurb": "Chipotle at home for a fraction of the price.",
+    "description": "A burrito bowl is just smart assembly of cheap staples: rice, beans, and whatever fresh toppings you have. It's endlessly flexible, keeps well, and costs a couple of dollars a serving.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegetarian",
+      "vegan"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked long-grain or jasmine rice",
+      "1 can black beans, drained and rinsed",
+      "1/2 cup sweetcorn",
+      "1/2 cup chunky salsa",
+      "1/2 ripe avocado, sliced",
+      "Handful of shredded romaine",
+      "Optional: grated cheddar, sour cream, lime, hot sauce"
+    ],
+    "steps": [
+      "Warm the rice and the beans (with a splash of water) in the microwave until hot.",
+      "Season the beans with a pinch of salt and cumin if you have it.",
+      "Spoon the rice into a bowl as the base and add the beans and corn.",
+      "Top with salsa, avocado, and lettuce, arranging them in sections.",
+      "Finish with cheese, a squeeze of lime, and hot sauce to taste."
+    ],
+    "tips": [
+      "Leave the vegan toppings off or on per bowl — the base is naturally plant-based.",
+      "Batch-cook rice and beans at the start of the week and these come together in 5 minutes."
+    ],
+    "id": 24,
+    "slug": "burrito-bowl",
+    "calories": 560,
+    "base_servings": 1
+  },
+  {
+    "name": "Loaded Hot Dog",
+    "icon": "56_hotdog_dish.png",
+    "category": "dinner",
+    "prep_time": 5,
+    "cook_time": 8,
+    "time": 13,
+    "servings": "1 serving",
+    "skill": "easy",
+    "blurb": "Low effort, high morale. A classic for a reason.",
+    "description": "A hot dog is only as good as its toppings and its bun. Simmer or pan-fry the dog for a snappy bite, warm the bun, and pile it high — it's a two-dollar dinner that hits every time.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [],
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "1 beef hot dog (frankfurter)",
+      "1 soft hot dog bun",
+      "Yellow mustard and ketchup",
+      "2 tbsp diced white onion",
+      "1 tbsp sweet relish or sliced dill pickles",
+      "Optional: grated cheddar, crispy fried onions"
+    ],
+    "steps": [
+      "Bring a small pot of water to a gentle simmer and cook the hot dog for 4–5 minutes, or pan-fry it until browned and blistered.",
+      "Warm the bun in the residual heat of the pan or briefly in the microwave.",
+      "Nestle the dog into the bun.",
+      "Top with mustard, ketchup, onion, and relish, plus cheese or crispy onions if you have them.",
+      "Eat immediately, over a plate."
+    ],
+    "tips": [
+      "Scoring the hot dog with a few shallow diagonal cuts helps it brown and stops it splitting.",
+      "Toasting the inside of the bun in the pan keeps it from going soggy."
+    ],
+    "id": 25,
+    "slug": "loaded-hot-dog",
+    "calories": 360,
+    "base_servings": 1
+  },
+  {
+    "name": "California Roll Sushi",
+    "icon": "98_sushi_dish.png",
+    "category": "dinner",
+    "prep_time": 30,
+    "cook_time": 15,
+    "time": 45,
+    "servings": "2 rolls",
+    "skill": "intermediate",
+    "blurb": "A weekend project that pays off in bragging rights.",
+    "description": "Rolling your own sushi is a satisfying weekend cook that's cheaper and more fun than it looks. California rolls use no raw fish, so they're a beginner-friendly place to start.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "pescatarian"
+    ],
+    "allergens": [
+      "fish",
+      "shellfish",
+      "sesame"
+    ],
+    "ingredients": [
+      "1 cup short-grain sushi rice",
+      "1.25 cups water",
+      "2 tbsp rice vinegar",
+      "1 tbsp sugar",
+      "1/2 tsp salt",
+      "2 sheets nori",
+      "4 imitation crab sticks",
+      "1/2 cucumber, cut into strips",
+      "1/2 ripe avocado, sliced",
+      "Toasted sesame seeds, soy sauce, to serve"
+    ],
+    "steps": [
+      "Rinse the rice until the water runs clear, then cook it with the water (covered, low heat, 15 minutes, then rest 10).",
+      "Gently fold the vinegar, sugar, and salt through the warm rice and let it cool to room temperature.",
+      "Lay a sheet of nori shiny-side down on a lined surface and spread a thin layer of rice over it, leaving a bare strip at the top edge.",
+      "Arrange crab, cucumber, and avocado in a line across the rice, then roll it up tightly away from you, sealing the bare edge with a dab of water.",
+      "Wet a sharp knife and slice into 6–8 pieces; sprinkle with sesame seeds and serve with soy sauce."
+    ],
+    "tips": [
+      "A tea towel or sheet of parchment works fine if you don't own a bamboo mat.",
+      "Keep a bowl of water nearby — wet hands and a wet knife stop the rice sticking to everything."
+    ],
+    "id": 26,
+    "slug": "california-roll-sushi",
+    "calories": 350,
+    "base_servings": 2
+  },
+  {
+    "name": "Chewy Chocolate Chip Cookies",
+    "icon": "29_cookies_dish.png",
+    "category": "dessert",
+    "prep_time": 15,
+    "cook_time": 12,
+    "time": 27,
+    "servings": "12 cookies",
+    "skill": "intermediate",
+    "blurb": "Soft middles, crisp edges. Dangerous to have the recipe.",
+    "description": "The classic bake everyone should have in their pocket. Brown sugar and slightly underbaking are what keep these chewy in the middle rather than crunchy all the way through.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "115 g (1/2 cup) unsalted butter, softened",
+      "1/2 cup light brown sugar",
+      "1/4 cup granulated sugar",
+      "1 large egg",
+      "1 tsp vanilla extract",
+      "1.5 cups all-purpose flour",
+      "1/2 tsp baking soda",
+      "1/4 tsp salt",
+      "1 cup semisweet chocolate chips"
+    ],
+    "steps": [
+      "Heat the oven to 350°F (180°C) and line a tray with parchment.",
+      "Cream the butter with both sugars until pale and fluffy, about 2 minutes, then beat in the egg and vanilla.",
+      "Stir together the flour, baking soda, and salt, then fold into the wet mix until just combined.",
+      "Fold in the chocolate chips, then scoop tablespoon-sized balls onto the tray, spaced well apart.",
+      "Bake for 10–12 minutes, until the edges are set but the centers still look slightly underdone. Cool on the tray for 5 minutes to finish setting."
+    ],
+    "tips": [
+      "Pulling them out while the centers look soft is the secret to chewy cookies.",
+      "Chill the dough for 30 minutes for thicker cookies that spread less."
+    ],
+    "id": 27,
+    "slug": "chewy-chocolate-chip-cookies",
+    "calories": 160,
+    "base_servings": 6
+  },
+  {
+    "name": "Mug Brownie",
+    "icon": "31_chocolatecake_dish.png",
+    "category": "dessert",
+    "prep_time": 3,
+    "cook_time": 2,
+    "time": 5,
+    "servings": "1 mug",
+    "skill": "easy",
+    "blurb": "Emergency dessert. From craving to spoon in five minutes.",
+    "description": "When a chocolate craving hits at 11pm, this single-serving brownie is done before you'd finish deciding what to order. It's fudgy in the middle and needs nothing but a mug and a spoon.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "4 tbsp all-purpose flour",
+      "4 tbsp granulated sugar",
+      "2 tbsp unsweetened cocoa powder",
+      "Pinch of salt",
+      "3 tbsp whole milk",
+      "2 tbsp neutral oil",
+      "Optional: a few semisweet chocolate chips"
+    ],
+    "steps": [
+      "Stir the flour, sugar, cocoa, and salt together in a microwave-safe mug until no streaks remain.",
+      "Add the milk and oil and mix until you have a smooth, thick batter.",
+      "Press a few chocolate chips into the top if using.",
+      "Microwave on high for 60–80 seconds — stop while the top still looks just slightly wet, as it firms up quickly.",
+      "Let it cool for a minute (it's molten straight out) and eat warm, ideally with ice cream."
+    ],
+    "tips": [
+      "Err on the side of underbaking; an extra 20 seconds turns fudgy into dry.",
+      "Swap the oil for melted butter for a richer flavor."
+    ],
+    "id": 28,
+    "slug": "mug-brownie",
+    "calories": 450,
+    "base_servings": 1
+  },
+  {
+    "name": "No-Bake Cheesecake Cup",
+    "icon": "23_cheesecake_dish.png",
+    "category": "dessert",
+    "prep_time": 15,
+    "cook_time": 0,
+    "time": 15,
+    "servings": "2 cups",
+    "skill": "easy",
+    "blurb": "No oven, no fuss, and it looks like you tried very hard.",
+    "description": "This deconstructed cheesecake skips the baking entirely — you just whip, layer, and chill. It's the ideal dessert for a dorm with no oven, and it looks far more impressive than the effort suggests.",
+    "appliances": [],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1/2 cup full-fat cream cheese, softened",
+      "1/4 cup heavy (double) cream",
+      "3 tbsp granulated sugar",
+      "1/2 tsp vanilla extract",
+      "1/2 cup crushed graham crackers or digestive biscuits",
+      "1 tbsp unsalted butter, melted",
+      "1/2 cup fresh berries"
+    ],
+    "steps": [
+      "Beat the cream cheese with the sugar and vanilla until smooth.",
+      "In a separate bowl, whip the cream to soft peaks, then gently fold it into the cream cheese mixture until light.",
+      "Mix the crushed biscuits with the melted butter and press a layer into the bottom of two cups or glasses.",
+      "Spoon or pipe the cheesecake mixture over the base and smooth the tops.",
+      "Chill for at least 1 hour, then top with berries just before serving."
+    ],
+    "tips": [
+      "Softening the cream cheese fully is key — cold cream cheese stays lumpy.",
+      "A crushed cookie sandwich or leftover cereal works fine as the base."
+    ],
+    "id": 29,
+    "slug": "no-bake-cheesecake-cup",
+    "calories": 390,
+    "base_servings": 2
+  },
+  {
+    "name": "Cinnamon Apple Pie",
+    "icon": "06_apple_pie_dish.png",
+    "category": "dessert",
+    "prep_time": 25,
+    "cook_time": 45,
+    "time": 70,
+    "servings": "6 slices",
+    "skill": "intermediate",
+    "blurb": "A weekend bake that makes the whole hall smell incredible.",
+    "description": "A proper apple pie is a project, but a deeply satisfying one, and using ready-made crust keeps it achievable. The filling is just apples, sugar, and cinnamon cooked down under a golden lid.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "2 sheets shortcrust or pie pastry",
+      "3 Granny Smith apples, peeled and thinly sliced",
+      "1/3 cup granulated sugar",
+      "1 tsp ground cinnamon",
+      "1 tbsp all-purpose flour",
+      "1 tbsp unsalted butter",
+      "1 egg, beaten (for glaze)"
+    ],
+    "steps": [
+      "Heat the oven to 375°F (190°C).",
+      "Toss the sliced apples with the sugar, cinnamon, and flour until evenly coated.",
+      "Line a pie dish with one crust, fill with the apple mixture, and dot the top with small pieces of butter.",
+      "Lay the second crust over the top, trim and crimp the edges to seal, and cut a few slits in the top for steam.",
+      "Brush with beaten egg and bake for 40–45 minutes, until the crust is deep golden and the filling is bubbling. Cool at least 30 minutes before slicing."
+    ],
+    "tips": [
+      "Firm, tart apples like Granny Smith hold their shape best.",
+      "If the edges brown too fast, cover just the rim with a strip of foil."
+    ],
+    "id": 30,
+    "slug": "cinnamon-apple-pie",
+    "calories": 330,
+    "base_servings": 6
+  },
+  {
+    "name": "Classic Glazed Donuts",
+    "icon": "35_donut_dish.png",
+    "category": "dessert",
+    "prep_time": 90,
+    "cook_time": 15,
+    "time": 105,
+    "servings": "8 donuts",
+    "skill": "intermediate",
+    "blurb": "A project bake, but warm homemade donuts hit different.",
+    "description": "Yeast donuts take time (mostly waiting for dough to rise), but frying your own and glazing them warm is a genuinely special weekend project. Worth it at least once.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "2.5 cups all-purpose (or bread) flour",
+      "1 packet (7 g) instant yeast",
+      "3/4 cup warm whole milk",
+      "1/4 cup sugar",
+      "1 large egg",
+      "3 tbsp unsalted butter, softened",
+      "1/2 tsp salt",
+      "Neutral oil, for frying",
+      "For glaze: 1 cup powdered sugar + 2 tbsp milk"
+    ],
+    "steps": [
+      "Combine the flour, yeast, warm milk, sugar, egg, butter, and salt and knead into a smooth, soft dough, about 8 minutes.",
+      "Cover and let rise in a warm spot until doubled, about 1 hour.",
+      "Roll out to 1 cm thick and cut into rings. Let them rest and puff for 20 minutes.",
+      "Heat 2 inches of oil to 350°F (175°C) and fry the donuts about 1 minute per side, until deep golden. Drain on paper towel.",
+      "Whisk the glaze ingredients, dip the warm donuts, and let them set on a rack."
+    ],
+    "tips": [
+      "Use a thermometer for the oil — too hot burns the outside before the middle cooks.",
+      "The dough is ready to fry when a gentle press springs back slowly."
+    ],
+    "id": 31,
+    "slug": "classic-glazed-donuts",
+    "calories": 250,
+    "base_servings": 8
+  },
+  {
+    "name": "Lemon Tart",
+    "icon": "64_lemonpie_dish.png",
+    "category": "dessert",
+    "prep_time": 20,
+    "cook_time": 30,
+    "time": 50,
+    "servings": "6 slices",
+    "skill": "intermediate",
+    "blurb": "Sharp, bright, and quietly the most impressive thing here.",
+    "description": "A silky lemon tart looks and tastes like a bakery bought it, but it's really just a cooked lemon curd poured into a crust. The balance of tart and sweet makes it feel far more sophisticated than the effort.",
+    "appliances": [
+      "oven",
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "1 pre-baked sweet tart shell",
+      "3 large eggs",
+      "2 lemons (juice and zest)",
+      "3/4 cup granulated sugar",
+      "1/3 cup unsalted butter",
+      "Optional: powdered sugar, to finish"
+    ],
+    "steps": [
+      "If your tart shell is raw, blind-bake it at 350°F (175°C) until pale gold, then cool.",
+      "In a saucepan off the heat, whisk the eggs, sugar, lemon juice, and zest together.",
+      "Add the butter and set over low heat, whisking constantly, until the mixture thickens into a curd that coats the back of a spoon — do not let it boil.",
+      "Pour the curd into the baked shell and smooth the top.",
+      "Chill for at least 2 hours until fully set, then dust with powdered sugar and slice."
+    ],
+    "tips": [
+      "Constant whisking over low heat stops the eggs from scrambling.",
+      "Strain the curd before pouring if you want an ultra-smooth finish."
+    ],
+    "id": 32,
+    "slug": "lemon-tart",
+    "calories": 340,
+    "base_servings": 6
+  },
+  {
+    "name": "Vanilla Pudding",
+    "icon": "76_pudding_dish.png",
+    "category": "dessert",
+    "prep_time": 5,
+    "cook_time": 10,
+    "time": 15,
+    "servings": "2 servings",
+    "skill": "easy",
+    "blurb": "The kind of simple that tastes like being eight years old.",
+    "description": "Homemade pudding is a world away from the packet stuff and only needs pantry staples. It thickens on the stovetop in minutes and sets in the fridge into something silky and nostalgic.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "2 cups whole milk",
+      "1/4 cup granulated sugar",
+      "2 tbsp cornstarch",
+      "1 large egg yolk",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "steps": [
+      "Whisk the sugar, cornstarch, salt, and egg yolk together in a saucepan while it's still cold.",
+      "Gradually whisk in the milk until smooth.",
+      "Set over medium heat and cook, whisking constantly, until it thickens to a pudding consistency, about 5–8 minutes.",
+      "Remove from the heat and stir in the vanilla.",
+      "Pour into cups, press plastic wrap directly onto the surface to stop a skin forming, and chill until set."
+    ],
+    "tips": [
+      "Constant whisking prevents lumps and stops it catching on the bottom.",
+      "For chocolate pudding, whisk 2 tbsp cocoa into the dry ingredients at the start."
+    ],
+    "id": 33,
+    "slug": "vanilla-pudding",
+    "calories": 220,
+    "base_servings": 2
+  },
+  {
+    "name": "Strawberry Shortcake",
+    "icon": "91_strawberrycake_dish.png",
+    "category": "dessert",
+    "prep_time": 20,
+    "cook_time": 15,
+    "time": 35,
+    "servings": "4 servings",
+    "skill": "intermediate",
+    "blurb": "Birthday-worthy, and forgiving if your layers aren't perfect.",
+    "description": "Layers of soft cake, macerated strawberries, and cream — this is a celebration dessert that doesn't demand pastry-chef precision. Even a slightly wonky assembly tastes fantastic.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "1 sponge or pound cake (bought, or a simple 4-egg sponge)",
+      "2 cups fresh strawberries, sliced",
+      "2 tbsp granulated sugar",
+      "1 cup heavy (double) cream",
+      "1 tbsp powdered sugar",
+      "1/2 tsp vanilla extract"
+    ],
+    "steps": [
+      "Toss the sliced strawberries with the 2 tbsp sugar and let them sit 15 minutes to release their juices (macerate).",
+      "Whip the cream with the powdered sugar and vanilla to soft peaks.",
+      "Slice the sponge horizontally into two layers.",
+      "Layer the bottom sponge with cream and strawberries, add the top layer, and repeat with more cream and berries.",
+      "Spoon the strawberry juices over the top and serve, or chill briefly first."
+    ],
+    "tips": [
+      "A store-bought sponge or even pound cake makes this a 20-minute dessert.",
+      "Macerating the berries is what gives you those glossy, syrupy strawberries."
+    ],
+    "id": 34,
+    "slug": "strawberry-shortcake",
+    "calories": 380,
+    "base_servings": 4
+  },
+  {
+    "name": "Portuguese-Style Egg Tarts",
+    "icon": "43_eggtart_dish.png",
+    "category": "dessert",
+    "prep_time": 15,
+    "cook_time": 20,
+    "time": 35,
+    "servings": "6 tarts",
+    "skill": "intermediate",
+    "blurb": "Flaky, wobbly-centered, and gone in one bite.",
+    "description": "These little custard tarts use shortcut puff pastry for a flaky shell and a simple egg custard for the filling. They bake up with the signature caramelized top and a soft, trembling center.",
+    "appliances": [
+      "oven"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk",
+      "egg"
+    ],
+    "ingredients": [
+      "1 sheet all-butter puff pastry, thawed",
+      "3 large egg yolks",
+      "1/2 cup whole milk",
+      "1/3 cup granulated sugar",
+      "1 tsp vanilla extract",
+      "1 tsp cornstarch"
+    ],
+    "steps": [
+      "Heat the oven to 400°F (200°C) and grease a muffin tin.",
+      "Cut the puff pastry into squares (or roll and cut circles) and press one into each muffin cup, coming up the sides.",
+      "Whisk the yolks, milk, sugar, vanilla, and cornstarch until smooth, then pour into the pastry cases, filling about three-quarters full.",
+      "Bake for 18–22 minutes, until the pastry is golden and the custard is set with browned spots on top.",
+      "Cool for a few minutes in the tin, then lift out — they're best slightly warm."
+    ],
+    "tips": [
+      "Don't overfill; the custard puffs as it bakes and can spill over.",
+      "A few minutes under the broiler at the end deepens those signature caramelized spots."
+    ],
+    "id": 35,
+    "slug": "portuguese-style-egg-tarts",
+    "calories": 180,
+    "base_servings": 6
+  },
+  {
+    "name": "Stovetop Popcorn",
+    "icon": "84_popcorn_bowl.png",
+    "category": "snack",
+    "prep_time": 2,
+    "cook_time": 6,
+    "time": 8,
+    "servings": "2 servings",
+    "skill": "easy",
+    "blurb": "Cents per bowl, and better than any microwave bag.",
+    "description": "Real stovetop popcorn is faster and cheaper than the bagged kind, with none of the weird coating. Once you've made it this way, the microwave bags feel like a scam.",
+    "appliances": [
+      "stovetop"
+    ],
+    "diets": [
+      "vegan"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup popcorn kernels",
+      "2 tbsp neutral oil (high smoke point)",
+      "Salt",
+      "Optional: melted butter or nutritional yeast"
+    ],
+    "steps": [
+      "Add the oil and 3 test kernels to a large pot and cover with a lid over medium-high heat.",
+      "When the test kernels pop, the oil is ready — add the rest of the kernels in an even layer and put the lid back on.",
+      "Once the popping starts, gently shake the pot every few seconds to keep the kernels moving and prevent burning.",
+      "When the popping slows to a few seconds between pops, take the pot off the heat.",
+      "Tip into a bowl, salt immediately, and toss with butter or nutritional yeast if you like."
+    ],
+    "tips": [
+      "Leave the lid slightly ajar to let steam escape for crisper popcorn.",
+      "Salt while it's hot so it sticks to the surface."
+    ],
+    "id": 36,
+    "slug": "stovetop-popcorn",
+    "calories": 150,
+    "base_servings": 2
+  },
+  {
+    "name": "Loaded Cheese Puffs",
+    "icon": "25_cheesepuff_bowl.png",
+    "category": "snack",
+    "prep_time": 2,
+    "cook_time": 0,
+    "time": 2,
+    "servings": "1 serving",
+    "skill": "easy",
+    "blurb": "Listed for honesty. Sometimes this is dinner, and that's fine.",
+    "description": "No cooking, no shame. This is here because a snack that requires zero appliances still deserves a spot, and a little hot sauce genuinely elevates a bowl of cheese puffs.",
+    "appliances": [],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1 big handful of cheese puffs (curls)",
+      "Optional: a few dashes of hot sauce",
+      "Optional: squeeze of lime"
+    ],
+    "steps": [
+      "Tip the cheese puffs into a bowl.",
+      "If you're feeling fancy, toss them with a few dashes of hot sauce and a squeeze of lime.",
+      "Snack. No further steps required."
+    ],
+    "tips": [
+      "The lime-and-hot-sauce version is genuinely worth trying at least once.",
+      "Eat with chopsticks to keep your fingers clean for your keyboard."
+    ],
+    "id": 37,
+    "slug": "loaded-cheese-puffs",
+    "calories": 200,
+    "base_servings": 1
+  },
+  {
+    "name": "Microwave Potato Chips",
+    "icon": "78_potatochips_bowl.png",
+    "category": "snack",
+    "prep_time": 10,
+    "cook_time": 6,
+    "time": 16,
+    "servings": "1 serving",
+    "skill": "intermediate",
+    "blurb": "Crunchy chips from one potato and a microwave. Weirdly fun.",
+    "description": "You can make genuinely crisp potato chips in the microwave with nothing but a potato, a little oil, and some patience with slicing. It's a fun, cheap experiment that actually works.",
+    "appliances": [
+      "microwave"
+    ],
+    "diets": [
+      "vegan"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 russet potato (starchy — crisps best)",
+      "1 tsp neutral oil",
+      "Salt",
+      "Optional: paprika or other seasoning"
+    ],
+    "steps": [
+      "Slice the potato as thinly as you possibly can — a steady hand or a mandoline is ideal, since thin equals crisp.",
+      "Toss the slices with the oil and a little salt until lightly coated.",
+      "Lay them in a single layer, not touching, on a piece of parchment on a microwave-safe plate.",
+      "Microwave on high for 3 minutes, then in 1-minute bursts, watching closely, until they're golden and crisp (usually 4–6 minutes total).",
+      "Let them cool for a minute to crisp fully, then season and eat."
+    ],
+    "tips": [
+      "The thinner and more even your slices, the better they crisp — this is the whole game.",
+      "They cook in batches; overlapping slices steam instead of crisping."
+    ],
+    "id": 38,
+    "slug": "microwave-potato-chips",
+    "calories": 180,
+    "base_servings": 1
+  },
+  {
+    "name": "Kettle Oatmeal Jar",
+    "icon": "04_bowl.png",
+    "category": "breakfast",
+    "prep_time": 5,
+    "cook_time": 5,
+    "time": 10,
+    "servings": "1 jar",
+    "skill": "easy",
+    "blurb": "No stove, no microwave: just a kettle and five minutes.",
+    "description": "If all you have is a kettle, you can still make a hot, filling breakfast. Quick oats soften in a few minutes under boiling water, and the toppings turn it from gruel into something you look forward to.",
+    "appliances": [
+      "kettle"
+    ],
+    "diets": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "peanut"
+    ],
+    "ingredients": [
+      "1/2 cup quick-cooking oats",
+      "3/4 cup boiling water",
+      "1/2 ripe banana, sliced",
+      "1 tbsp natural peanut butter",
+      "Pinch of salt",
+      "Optional: honey, cinnamon, or berries"
+    ],
+    "steps": [
+      "Put the oats and a pinch of salt in a jar or sturdy mug.",
+      "Pour over the boiling water, stir once, and put a lid or plate on top.",
+      "Leave for 5 minutes so the oats absorb the water and soften.",
+      "Stir again — add a splash more hot water if it's too thick.",
+      "Top with the banana and peanut butter, plus honey, cinnamon, or berries if you have them."
+    ],
+    "tips": [
+      "Quick oats work best here; rolled oats need a minute or two longer to soften.",
+      "Swap peanut butter for any nut or seed butter, or leave it out entirely."
+    ],
+    "id": 39,
+    "slug": "kettle-oatmeal-jar",
+    "calories": 350,
+    "base_servings": 1
+  },
+  {
+    "name": "PB Banana Smoothie",
+    "icon": "58_icecream_bowl.png",
+    "category": "breakfast",
+    "prep_time": 5,
+    "cook_time": 0,
+    "time": 5,
+    "servings": "1 large glass",
+    "skill": "easy",
+    "blurb": "Breakfast you can drink while walking to a 9am.",
+    "description": "When there's no time to sit down, this smoothie is a full breakfast in a cup: fruit, protein, and slow-release oats, all blended in a minute. It's endlessly adjustable to whatever's in the kitchen.",
+    "appliances": [
+      "blender"
+    ],
+    "diets": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "peanut"
+    ],
+    "ingredients": [
+      "1 ripe banana (frozen, if possible)",
+      "1 tbsp natural peanut butter",
+      "1 cup milk (any kind)",
+      "2 tbsp rolled oats",
+      "A few ice cubes",
+      "Optional: 1 tsp honey, pinch of cinnamon"
+    ],
+    "steps": [
+      "Add the banana, peanut butter, milk, oats, and ice to a blender.",
+      "Blend on high until completely smooth, about 30–45 seconds.",
+      "Taste and add honey or cinnamon if you'd like it sweeter or spicier.",
+      "Pour into a glass or travel cup and drink right away."
+    ],
+    "tips": [
+      "A frozen banana makes it thicker and colder — peel and freeze ripe ones before they spoil.",
+      "Use a dairy-free milk to make it vegan; the rest is already plant-based."
+    ],
+    "id": 40,
+    "slug": "pb-banana-smoothie",
+    "calories": 330,
+    "base_servings": 1
+  }
+]

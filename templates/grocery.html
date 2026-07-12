@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %}Grocery List · Pixel Pantry{% endblock %}
+{% block content %}
+
+<section class="planner-head">
+  <div>
+    <p class="eyebrow">Grocery list</p>
+    <h1><i>Shopping for this week</i></h1>
+  </div>
+  <div class="week-nav">
+    <a class="week-arrow" href="{{ url_for('grocery', start=prev_week) }}">←</a>
+    <span class="week-label">{{ day_isos[0] | wday }} – {{ day_isos[-1] | wday }}</span>
+    <a class="week-arrow" href="{{ url_for('grocery', start=next_week) }}">→</a>
+  </div>
+</section>
+
+{% if items %}
+<div class="grocery-toolbar" id="grocery-toolbar">
+  <p><span id="item-count">{{ items|length }}</span> items · tap to check off
+     {% if group %}· scaled for {{ group.size }}{% endif %}</p>
+  <button type="button" id="clear-list" class="clear-list-btn">Clear list</button>
+</div>
+
+<ul class="grocery-list" id="grocery-list">
+  {% for it in items %}
+  <li class="grocery-item" data-key="{{ it.display }}">
+    <label>
+      <input type="checkbox" class="g-check">
+      <span class="g-name">{{ it.display }}</span>
+    </label>
+    <span class="g-detail">
+      {{ it.amounts | join('  ·  ') }}
+      <em>for {{ it.recipes | join(', ') }}</em>
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+<p class="est grocery-note">Amounts are listed per recipe — combine quantities as you shop.</p>
+
+<div class="empty" id="cleared-state" hidden>
+  <p class="empty-big">List cleared.</p>
+  <p>Your shopping list for this week is empty.</p>
+  <button type="button" id="rebuild-list" class="reset">Rebuild from plan</button>
+</div>
+{% else %}
+<div class="empty">
+  <p class="empty-big">Nothing planned this week yet.</p>
+  <p>Add some recipes in the <a href="{{ url_for('planner', start=start_iso) }}">planner</a>
+     and they'll show up here as a shopping list.</p>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // State is stored per week in the browser.
+  const WEEK = "{{ start_iso }}";
+  const CHECK_KEY = "pantry-grocery-checked:" + WEEK;
+  const CLEAR_KEY = "pantry-grocery-cleared:" + WEEK;
+  const list = document.getElementById("grocery-list");
+  if (list) {
+    const checked = new Set(JSON.parse(localStorage.getItem(CHECK_KEY) || "[]"));
+    const cleared = new Set(JSON.parse(localStorage.getItem(CLEAR_KEY) || "[]"));
+    const toolbar = document.getElementById("grocery-toolbar");
+    const note = document.querySelector(".grocery-note");
+    const clearedState = document.getElementById("cleared-state");
+
+    function showClearedState() {
+      list.hidden = true; toolbar.hidden = true; if (note) note.hidden = true;
+      clearedState.hidden = false;
+    }
+
+    // Remove any items the user cleared earlier this week.
+    list.querySelectorAll(".grocery-item").forEach(li => {
+      if (cleared.has(li.dataset.key)) li.remove();
+    });
+
+    // Restore tick marks and wire up check-off.
+    list.querySelectorAll(".grocery-item").forEach(li => {
+      const box = li.querySelector(".g-check");
+      if (checked.has(li.dataset.key)) { box.checked = true; li.classList.add("done"); }
+      box.addEventListener("change", () => {
+        li.classList.toggle("done", box.checked);
+        if (box.checked) checked.add(li.dataset.key); else checked.delete(li.dataset.key);
+        localStorage.setItem(CHECK_KEY, JSON.stringify([...checked]));
+      });
+    });
+
+    const count = document.getElementById("item-count");
+    if (count) count.textContent = list.querySelectorAll(".grocery-item").length;
+    if (list.querySelectorAll(".grocery-item").length === 0) showClearedState();
+
+    // Clear list = erase every item now showing.
+    document.getElementById("clear-list").addEventListener("click", () => {
+      list.querySelectorAll(".grocery-item").forEach(li => cleared.add(li.dataset.key));
+      localStorage.setItem(CLEAR_KEY, JSON.stringify([...cleared]));
+      showClearedState();
+    });
+
+    // Rebuild = forget what was cleared this week and reload.
+    document.getElementById("rebuild-list").addEventListener("click", () => {
+      localStorage.removeItem(CLEAR_KEY);
+      location.reload();
+    });
+  }
+</script>
+{% endblock %}

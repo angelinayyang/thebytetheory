@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Cooking Group · Pixel Pantry{% endblock %}
+{% block content %}
+
+<section class="planner-head">
+  <div>
+    <p class="eyebrow">Cooking group</p>
+    <h1><i>{{ g.group['name'] if g else 'Your cooking group' }}</i></h1>
+  </div>
+  {% if g %}<span class="group-size">{{ g.size }} {{ 'cook' if g.size == 1 else 'cooks' }}</span>{% endif %}
+</section>
+
+{% if not g %}
+<div class="group-intro">
+  <p><i>Doing a hall cooking rotation? Start a group and add people by username.
+     Recipe ingredients and portions automatically scale to your group size, and
+     grocery lists cover everyone.</i></p>
+  <form class="plan-add" method="post" action="{{ url_for('group_create') }}">
+    <label class="field"><span>Group name</span>
+      <input type="text" name="name" placeholder="e.g. Burton 3rd West" maxlength="60"></label>
+    <button type="submit" class="apply">Create group</button>
+  </form>
+</div>
+{% else %}
+<div class="group-panel">
+  <p class="scale-note">Recipes now portion for <strong>{{ g.size }}</strong> by default,
+     and grocery lists are multiplied to match.</p>
+
+  <h2 class="section-h">Members</h2>
+  <ul class="member-list">
+    {% for m in g.members %}
+    <li class="member">
+      <span class="member-dot">{{ m['username'][0]|upper }}</span>
+      <span class="member-name">{{ m['username'] }}
+        {% if m['id'] == g.group['owner_id'] %}<small>owner</small>{% endif %}
+        {% if m['id'] == user['id'] %}<small>you</small>{% endif %}
+      </span>
+      {% if g.is_owner and m['id'] != user['id'] %}
+      <form method="post" action="{{ url_for('group_remove') }}">
+        <input type="hidden" name="user_id" value="{{ m['id'] }}">
+        <button class="x" title="Remove" aria-label="Remove">×</button>
+      </form>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="section-h">Group meals</h2>
+  {% if meals %}
+  <p class="scale-note">Meals your group labeled for the rotation. These are the
+     ones scaled to {{ g.size }} on each cook's grocery list.</p>
+  <ul class="group-meals">
+    {% for m in meals %}
+    <li class="gmeal {{ 'done' if m.cooked }}">
+      <span class="gmeal-thumb" style="--tint: {{ m.tint }}">
+        <img src="{{ url_for('static', filename='icons/' + m.icon) }}" alt="" width="34" height="34"></span>
+      <span class="gmeal-body">
+        <span class="gmeal-name">{{ m.name }}{% if m.cooked %} <span class="grp-tag done">cooked</span>{% endif %}</span>
+        <span class="gmeal-meta">{{ m.daylabel }} · {{ m.meal }} · by {{ m.username }}</span>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="scale-note">No group meals yet. On the <a href="{{ url_for('planner') }}">planner</a>,
+     tap the group icon on any meal to add it to the rotation here.</p>
+  {% endif %}
+
+  <br>
+
+  {% if g.is_owner %}
+  <form class="plan-add" method="post" action="{{ url_for('group_add') }}">
+    
+    <label class="field"><span>Add by username</span>
+      <input type="text" name="username" placeholder="hall-mate's username" required></label>
+    <button type="submit" class="apply">Add member</button>
+  </form>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('group_leave') }}" class="leave-form">
+    <button type="submit" class="leave-btn">
+      {{ 'Disband group' if g.is_owner else 'Leave group' }}</button>
+  </form>
+</div>
+{% endif %}
+
+{% endblock %}

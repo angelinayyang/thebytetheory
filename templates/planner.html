@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}Meal Planner · Pixel Pantry{% endblock %}
+{% block content %}
+
+<section class="planner-head">
+  <div>
+    <p class="eyebrow">Meal planner</p>
+    <h1><i>Your week</i></h1>
+  </div>
+  <div class="week-nav">
+    <a class="week-arrow" href="{{ url_for('planner', start=prev_week) }}">←</a>
+    <span class="week-label">{{ day_isos[0] | wday }} – {{ day_isos[-1] | wday }}</span>
+    <a class="week-arrow" href="{{ url_for('planner', start=next_week) }}">→</a>
+  </div>
+</section>
+
+<form class="plan-add" method="post" action="{{ url_for('plan_add') }}">
+  <input type="hidden" name="next" value="{{ url_for('planner', start=start_iso) }}">
+  <label class="field"><span>Recipe</span>
+    <select name="recipe_id" required>
+      <option value="">Choose…</option>
+      {% for r in all_recipes %}
+        <option value="{{ r.id }}">{{ r.name }} · {{ r.calories }} kcal</option>
+      {% endfor %}
+    </select>
+  </label>
+  <label class="field"><span>Day</span>
+    <select name="day" required>
+      {% for d in day_isos %}<option value="{{ d }}">{{ d | wday }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="field"><span>Meal</span>
+    <select name="meal" required>
+      {% for m in meal_slots %}<option value="{{ m }}">{{ m|capitalize }}</option>{% endfor %}
+    </select>
+  </label>
+  <button type="submit" class="apply">Add to plan</button>
+</form>
+
+<p class="week-total">Planned this week: <strong>{{ "{:,}".format(week_total) }} kcal</strong>
+   <span class="est">(estimated)</span></p>
+
+<div class="week-grid">
+  {% for d in day_isos %}
+  <div class="day-col">
+    <div class="day-head">
+      <span class="day-name">{{ d | wday }}</span>
+      <span class="day-kcal">{{ "{:,}".format(totals[d]) }} kcal</span>
+    </div>
+    {% for m in meal_slots %}
+      {% if grid[d][m] %}
+      <div class="slot">
+        <p class="slot-label pixel-label">{{ m }}</p>
+        {% for e in grid[d][m] %}
+        <div class="plan-item {{ 'is-cooked' if e.cooked }}" style="--tint: {{ e.tint }}">
+          <a class="plan-item-link" href="{{ url_for('recipe', recipe_id=e.id) }}">
+            <span class="plan-icon"><img src="{{ url_for('static', filename='icons/' + e.icon) }}" alt="" width="34" height="34"></span>
+            <span class="plan-name">
+              <span class="pn-title">{{ e.name }}{% if e.for_group %} <span class="grp-tag">Group</span>{% endif %}</span>
+              <small>{{ e.calories }} kcal</small>
+            </span>
+          </a>
+          {% if e.cooked %}
+          <span class="added-badge">✓ added</span>
+          {% else %}
+          <div class="plan-item-btns">
+            {% if group %}
+            <form method="post" action="{{ url_for('plan_group_toggle') }}">
+              <input type="hidden" name="entry_id" value="{{ e.entry_id }}">
+              <input type="hidden" name="next" value="{{ url_for('planner', start=start_iso) }}">
+              <button class="grp-toggle {{ 'on' if e.for_group }}"
+                title="{{ 'Remove group label' if e.for_group else 'Label as group meal' }}" aria-label="Toggle group meal">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </button>
+            </form>
+            {% endif %}
+            <form method="post" action="{{ url_for('plan_cook') }}">
+              <input type="hidden" name="entry_id" value="{{ e.entry_id }}">
+              <input type="hidden" name="next" value="{{ url_for('planner', start=start_iso) }}">
+              <button class="cooked-tick" title="Mark cooked (+10)" aria-label="Mark cooked">✓</button>
+            </form>
+            <form method="post" action="{{ url_for('plan_remove') }}">
+              <input type="hidden" name="entry_id" value="{{ e.entry_id }}">
+              <input type="hidden" name="next" value="{{ url_for('planner', start=start_iso) }}">
+              <button class="x" title="Remove" aria-label="Remove">×</button>
+            </form>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% endfor %}
+    {% if totals[d] == 0 %}<p class="day-empty">—</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<p class="planner-foot"><a href="{{ url_for('grocery', start=start_iso) }}">Generate grocery list for this week →</a></p>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Sign up · Pixel Pantry{% endblock %}
+{% block content %}
+<div class="auth">
+  <p class="eyebrow">Get started</p>
+  <h1>Create an account</h1>
+  <form method="post" class="auth-form">
+    <label class="field"><span>Username (3+ characters)</span>
+      <input type="text" name="username" autocomplete="username" required autofocus></label>
+    <label class="field"><span>Password (6+ characters)</span>
+      <input type="password" name="password" autocomplete="new-password" required></label>
+    <button type="submit" class="apply">Sign up</button>
+  </form>
+  <p class="auth-alt">Already have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+</div>
+{% endblock %}
